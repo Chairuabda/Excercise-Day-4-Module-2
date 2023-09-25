@@ -1,0 +1,141 @@
+.navbar-section {
+    max-width: 100vw;
+    padding: 15px;
+}
+.navbar-section nav {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+/* Button */
+.navbar-section nav .btn {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: left;
+    margin-left: 10px;
+}
+.navbar-section nav .btn a {
+    display: flex;
+    text-decoration: none;
+}
+.navbar-section nav .btn a button {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    padding: 7px 14px;
+    border-radius: 15px;
+}
+
+/* Mobile Navbar */
+.navbar-section .background div {
+    position: fixed;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+    background-color: white;
+    opacity: 70%;
+    height: 69px;
+    border-radius: 18px;
+}
+.navbar-section .mobile-nav {
+    display: flex;
+    justify-content: center;
+}
+.navbar-section .mobile-nav .container-nav {
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+    background-color: transparent;
+    border-radius: 18px;
+}
+.navbar-section .mobile-nav .nav-list ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 15px 5px;
+
+}
+.navbar-section .mobile-nav .nav-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.navbar-section .mobile-nav .nav-list a {
+    font-size: 12px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.navbar-section .mobile-nav .nav-list a p {
+    margin-top: -8px;
+    font-weight: 600;
+}
+
+/* Dekstop Navbar */
+.navbar-section .dekstop-nav .nav-list ul {
+    display: none;
+}
+.navbar-section .dekstop-nav ul li {
+    list-style-type: none;
+}
+.navbar-section .dekstop-nav .nav-list ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+}
+
+
+/* HOVER */
+.navbar-section nav .btn a button:hover {
+    background-color: #4ECCA3;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.navbar-section .nav-list ul li a:hover {
+    color: #4ECCA3;
+}
+
+
+
+/* ACTIVE */
+.navbar-section nav .btn a button:active {
+    transition: transform 1s;
+    transform: scale(0.9);
+}
+
+.navbar-section .nav-list ul li:active {
+    transition: transform 1s;
+    transform: scale(0.8);
+}
+
+
+
+/* RESPOSIVE */
+@media screen and (min-width: 720px) {
+
+    .navbar-section .background div {
+        display: none;
+    }
+
+    .navbar-section .mobile-nav {
+        display: none;
+    }
+
+    .navbar-section .dekstop-nav .nav-list ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        text-align: center;
+        gap: 5px;
+    }
+}
