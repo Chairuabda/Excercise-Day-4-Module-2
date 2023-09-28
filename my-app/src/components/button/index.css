@@ -1,0 +1,21 @@
+button {
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #f9b17a;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 18px #888888;
+}
+
+.btn-container button:hover {
+    border: 1px solid #f9b17a;
+    color: #f9b17a;
+    background-color: transparent;
+}
+
+.btn-container button:active {
+    background-color: #f9b17a;
+    color: black;
+    border: 1px solid #f9b17a;
+}

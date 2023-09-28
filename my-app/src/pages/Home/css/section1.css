@@ -1,0 +1,176 @@
+section.bodyContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow : hidden;
+	height: 100vh;
+}
+
+.bodyContent .mainContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	/* margin-top: 50px; */
+}
+
+.bodyContent .mainContent .img {
+	display: flex;
+	width: 80%;
+	align-items: center;
+	justify-content: center;
+}
+
+.bodyContent .mainContent img {
+	width: 80%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 24px #daa520;
+}
+
+
+.bodyContent .titleText {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 100vw;
+}
+
+.firstContent .mainText {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 0;
+}
+
+.bodyContent .titleText h3 {
+	font-size: 16px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 200;
+	font-family: 'Roboto Flex', sans-serif;
+	color: #daa520;
+}
+
+.bodyContent .titleText h2 {
+	font-size: 16px;
+	margin: 0;
+	font-weight: 300;
+	font-family: 'Roboto Flex', sans-serif;
+	color: #daa520;
+}
+
+.bodyContent .titleText h1 {
+	font-size: 30px;
+	font-weight: 800;
+	font-family: 'Roboto Flex', sans-serif;
+	margin: 20px 0;
+}
+
+.bodyContent .titleText p {
+	margin: 15px 0;
+	font-family: 'Roboto Flex', sans-serif;
+}
+
+
+.firstContent {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.firstContent .btnProject {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.firstContent a {
+	width: 80%;
+}
+
+.firstContent a button {
+	display: flex;
+	background-color: black;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	color: #daa520;
+	border: 1px solid #daa520;
+}
+
+.firstContent a button:hover {
+	border: 1px solid white;
+	color: white;
+}
+
+.firstContent a button:active {
+	background-color: #daa520;
+	color: black;
+	border: 1px solid #daa520;
+}
+
+.mainContent .titleText {
+	display: flex;
+	flex-direction: column;
+}
+/* 
+.mainContent .titleText .sosmed {
+	width: 80%;
+	margin-bottom: 10px;
+}
+
+.titleText .sosmed a {
+	font-size: 18px;
+	margin-right: 10px;
+	color: white;
+}
+
+.titleText .sosmed a:hover {
+	color: #daa520;
+} */
+
+
+@media screen and (min-width:770px) {
+	section.bodyContent {
+		height: 85vh;
+	}
+}
+
+@media screen and (min-width:1000px) {
+	.bodyContent .mainContent {
+		flex-direction: row-reverse;
+	}
+	.bodyContent .titleText {
+		/* display: flex; */
+		/* justify-content: center;
+		align-items: center; */
+		max-width: 100vw;
+	}
+	
+	.firstContent .mainText {
+		display: flex;
+		align-items: start;
+		flex-direction: column;
+		width: 100%;
+		margin: 0;
+	}
+	.firstContent .mainText h3 {
+		font-size: 24px;
+	}
+	.firstContent .mainText h1 {
+		font-size: 50px;
+	}
+}
+
+
+
+/* Animate */
+
+.animate__animated.animate__fadeInRight {
+	--animate-duration: 0.8s
+}

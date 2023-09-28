@@ -1,0 +1,36 @@
+.header {
+	position: relative;
+	top: 0px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 5px 10px;
+	align-items: center;
+}
+.header .text-header .text{
+	margin-left: 30px;
+	color: #daa520;
+	text-decoration: none;
+}
+.header .logo-header {
+	margin-right: 30px;
+	display: flex;
+	border-radius: 50%;
+	align-items: center;
+	padding: 2px;
+}
+.header .logo {
+	color: white;
+}
+.header .logo:hover {
+	color: #daa520;
+}
+.header .logo:active {
+	color: #888888;
+}
+
+@media screen and (min-width:770px) {
+	.header {
+		display: none;
+	}
+}
